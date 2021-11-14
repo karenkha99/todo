@@ -1,6 +1,6 @@
 import react from "react"
 
-function comp(){
+function Comp(){
     var text = "";
 
     function onchangeHandler(e){
@@ -9,10 +9,10 @@ function comp(){
 
     return(
         <div>
-            <input onChanges={onchangeHandler}/>
+            <input value="text" onChanges={onchangeHandler}/>
             <h1>{text}</h1>
         </div>
     );
 }
 
-export default comp;
+export default Comp;
